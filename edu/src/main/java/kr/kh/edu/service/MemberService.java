@@ -1,5 +1,9 @@
 package kr.kh.edu.service;
 
-public interface MemberService {
+import kr.kh.edu.vo.MemberVO;
 
+public interface MemberService {
+	// test
+	MemberVO getMember(String id);
+	
 }

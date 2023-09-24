@@ -8,4 +8,7 @@ public interface MemberDAO {
 	// test
 	MemberVO selectMember(@Param("id")String id);
 
+	// 회원가입
+	boolean insertMember(@Param("member")MemberVO member);
+
 }

@@ -26,7 +26,7 @@ public class MemberController {
 	@GetMapping("/member/signup")
 	public String signup(Model model) {
 		
-		model.addAttribute("title", "회원가입");
+		model.addAttribute("title", "회원가입시켜줘라~~");
 		return "/member/signup";
 	}
 	

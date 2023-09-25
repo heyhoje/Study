@@ -29,12 +29,12 @@ public class MemberServiceimp implements MemberService{
 		}
 		// 아이디 체크
 		String regexId = "^[a-zA-Z]\\w{5,19}$";
-		if(member.getMe_id() == null || Pattern.matches(regexId, member.getMe_id())){
+		if(member.getMe_id() == null || !Pattern.matches(regexId, member.getMe_id())){
 			return false;
 		}
 		// 비번 체크
 		String regexPw = "^\\w{6,20}$";
-		if(member.getMe_pw() == null || Pattern.matches(regexPw, member.getMe_pw())) {
+		if(member.getMe_pw() == null || !Pattern.matches(regexPw, member.getMe_pw())) {
 			return false;
 		}
 		return memberDao.insertMember(member);

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,7 +16,7 @@
 			<label>아이디</label>
 			<input type="text" name="me_id" class="form-control">
 		</div>
-		<button class="btn btn-outline-dark col-12">아이디 중복확인</button>
+		<button class="btn btn-outline-dark col-12" type="button">아이디 중복확인</button>
 		<div class="form-group">
 			<label>비밀번호</label>
 			<input type="password" name="me_pw" class="form-control">

@@ -1,4 +1,5 @@
-package kr.kh.edu1;
+package kr.kh.edu1.controller;
+
 
 import java.text.DateFormat;
 import java.util.Date;

@@ -143,6 +143,11 @@
 		    <version>${org.springframework-version}</version>
 		</dependency>  
 		
+		<!-- 기타 의존성들 -->
+	    <dependency>
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-starter-web</artifactId>
+	    </dependency>
 		    
 	</dependencies>
     <build>

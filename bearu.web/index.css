@@ -1,22 +1,16 @@
-#top {
-	color : black;
+button:hover {
+	border : solid red 5px; 
+	background-color: orange; color : white;
 }
 
-.bottom {
-	color : red;
-}
-/* 자식요소에 클래스 속성 적용 */
-.bottom div {
-	color : darkorange; font-weight : bold;
-}
-.bottom span {
-	color : yellowgreen; font-weight : bold;
-}
-/* 다른 태그에 같은 클래스 명을 쓸 경우*/
-div.bottom {
-	background-color: indianred;
-}
-span.bottom {
-	background-color: indigo;
+*:focus {
+	border : solid green 5px;
 }
 
+div:after {
+	background-color: red; 
+	content : '내용'; display : block;
+}
+div:before {
+	content : '* ' /* 리스트 처럼 보이게 효과를 줄 수 있다*/ 
+}

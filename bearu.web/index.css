@@ -1,42 +1,22 @@
-/* div { 
-	color : rgb(250, 0, 0);
-	background-color: brown;
-} */
-
-@font-face {
-	font-family: 'WarhavenB';
-	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/WarhavenB.woff2') format('woff2');
-	font-weight: 700;
-	font-style: normal;
+#top {
+	color : black;
 }
 
-@font-face {
-	font-family: 'OG_Renaissance_Secret-Rg';
-	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/OG_Renaissance_Secret-Rg.woff2') format('woff2');
-	font-weight: normal;
-	font-style: normal;
+.bottom {
+	color : red;
+}
+/* 자식요소에 클래스 속성 적용 */
+.bottom div {
+	color : darkorange; font-weight : bold;
+}
+.bottom span {
+	color : yellowgreen; font-weight : bold;
+}
+/* 다른 태그에 같은 클래스 명을 쓸 경우*/
+div.bottom {
+	background-color: indianred;
+}
+span.bottom {
+	background-color: indigo;
 }
 
-button {
-	border : none;
-	border-radius: 50px;
-
-}
-
-div {
-	border : solid red 4px;
-	font-size: 36px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-family: 'OG_Renaissance_Secret-Rg';
-
-}
-span {
-	border : dashed blue 4px;
-	border-radius: 50px;
-	font-family: 'WarhavenB';
-
-}
-input {
-	border : dashed skyblue 4px;
-	border-radius: 50px;
-	outline : none;  /* 클릭했을 때 생기는 검은선*/
-}

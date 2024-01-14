@@ -1,16 +1,27 @@
-button:hover {
-	border : solid red 5px; 
-	background-color: orange; color : white;
+.test {
+	display: inline-block;
+	width : 100px; height: 100px;
+	background-color: red;
 }
 
-*:focus {
-	border : solid green 5px;
+.test:hover {
+	display: inline-block;
+	width : 500px; height: 100px;
+	background-color: blue;
 }
 
-div:after {
-	background-color: red; 
-	content : '내용'; display : block;
+span {
+	display: inline-block;
+	width : 100px; height: 100px;
+	background-color: orange;
 }
-div:before {
-	content : '* ' /* 리스트 처럼 보이게 효과를 줄 수 있다*/ 
+
+.container {
+	width: 300px; height: 300px;
+	border : solid 3px black;
+}
+.box {
+	display: inline-block; 
+	width : 32%; height: 100%;
+	background-color: yellow;
 }

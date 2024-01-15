@@ -1,17 +1,18 @@
-div {
+.greeting {
 	padding : 10px; /* margin : 10px; */
 	border : solid black 5px;
 	background-color: aquamarine;
 }
 
 .plus {
-	width: 50%;
+	width: 50%; height : 30px;
 	margin : 0 auto;
 	margin-top : 10px;
+	/* border : solid black 5px; */
 	background-color: pink;
 }
 
-span {
+.test {
 	display : inline-block; /* 위아래에도 마진을 주고싶으면 인라인블럭으로 설정해야함. */
 	padding : 10px; margin : 10px; 
 	border : solid black 5px;
@@ -20,4 +21,28 @@ span {
 
 body {
 	margin : 0;
+}
+
+.popup {
+	display : block; /* display : none; 이면 팝업 안보이게됨 */
+	position : fixed;/* position : absolute; */
+	
+	right: 25%; top: 220px;
+	width : 50%; height : 50%;
+	background-color: rgb(255, 132, 132);
+	border : dotted 3px rgb(255, 55, 55);
+}
+.end {
+	height : 1500px;
+}
+.check {
+	position : relative;
+	bottom : 0;
+}
+.bg {
+	position : fixed;
+	width : 100vw; height : 100vw;
+	left : 0; top : 0; 
+	background-color: black;
+	opacity : 0.3;
 }

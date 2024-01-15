@@ -1,0 +1,23 @@
+div {
+	padding : 10px; /* margin : 10px; */
+	border : solid black 5px;
+	background-color: aquamarine;
+}
+
+.plus {
+	width: 50%;
+	margin : 0 auto;
+	margin-top : 10px;
+	background-color: pink;
+}
+
+span {
+	display : inline-block; /* 위아래에도 마진을 주고싶으면 인라인블럭으로 설정해야함. */
+	padding : 10px; margin : 10px; 
+	border : solid black 5px;
+	background-color: violet;
+}
+
+body {
+	margin : 0;
+}

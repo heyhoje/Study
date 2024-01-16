@@ -23,20 +23,29 @@ body {
 	margin : 0;
 }
 
-.popup {
+.popupWrapper {
 	display : block; /* display : none; 이면 팝업 안보이게됨 */
-	position : fixed;/* position : absolute; */
-	
+	position : fixed; /* 전체를 감싼 부모 요소에 fixed를 적용 */
+
 	right: 25%; top: 220px;
 	width : 50%; height : 50%;
 	background-color: rgb(255, 132, 132);
 	border : dotted 3px rgb(255, 55, 55);
 }
+.popup {
+	position : relative;/* position : absolute; */
+}
 .end {
 	height : 1500px;
 }
+
+.image {
+	width : 100%; 
+}
 .check {
-	position : relative;
+	position : absolute;
+	bottom : 0; left : 5px;
+	/* position : relative; */
 	bottom : 0;
 }
 .bg {

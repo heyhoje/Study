@@ -61,3 +61,42 @@ function sum3(a, b) {
 console.log(sum3(10, 20)); // 이 함수가 리턴하는 값을 출력! sum함수와 똑같이 작동함.
 // return을 만나면 함수를 종료 -> 해당 함수를 호출한 위치로 return 값을 반환 -> sum(10, 20) 과 동일
 
+
+console.log('- 함수의 표현식 -');
+function sum(a, b){
+	console.log(a + b);
+}
+sum(10, 20);
+
+console.log('- 화살표 함수 -');
+const sum4 = (a, b) => console.log(a + b); // 실행문이 한 줄 일 때는 중괄호 생략하면, return 명령문 생략 가능
+const sum5 = (a, b) => { a + b };
+// const sum5 = (a, b) => { return a + b; };
+
+sum4(10, 20);
+console.log(sum5(10, 20)); // 반환되는 값이 없기 때문에 undefined 뜸
+
+console.log('- 화살표 함수에서 괄호를 생략할 수 있는 경우 -');
+const sum6 = a => { return a + b; }; // 인자가 하나일 때! 
+
+console.log('- 일반 함수를 화살표 함수로 바꾸기 -');
+// function hello() {
+// 	console.log('Hello!');
+// 	console.log('World!!');
+// }
+
+const hello = () => {
+	console.log('Hello!');
+	console.log('World!!');
+};
+hello();
+
+const sum7 = (a, b) => {
+	return a + b;
+};
+console.log(sum7(10,30));
+
+const greeting = user => {
+	console.log(`Hello, ${user}님 안녕하세요`);
+};
+greeting('정은지');
